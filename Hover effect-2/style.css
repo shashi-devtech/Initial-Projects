@@ -1,0 +1,60 @@
+.parentbox {
+    width: 1000px;
+    height: 600px;
+    border: 2px blue solid;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height:100px;
+    position: absolute;
+    transition: 2s;
+   
+}
+
+.box:nth-child(1){
+    left:0;
+    top:0;
+    background-color: rgb(81, 195, 81);
+}
+
+.box:nth-child(2){
+    left:900px;
+    top:0;
+    background-color: rgb(220, 127, 192);
+}
+
+.box:nth-child(3){
+    left:900px;
+    top:500px;
+    background-color: rgb(93, 208, 226);
+}
+
+.box:nth-child(4){
+    left:0;
+    top:500px;
+    background-color: rgb(196, 163, 71);
+}
+
+.parentbox:hover .box:nth-child(1){
+    left:900px;
+    top:500px;
+}
+
+.parentbox:hover .box:nth-child(2){
+    left:0px;
+    top:500px;
+}
+
+.parentbox:hover .box:nth-child(3){
+    left:0px;
+    top:0px;
+}
+
+.parentbox:hover .box:nth-child(4){
+    left:900px;
+    top:0px;
+}
